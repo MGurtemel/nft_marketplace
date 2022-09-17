@@ -1,0 +1,227 @@
+{
+  "types": [
+    {
+      "typeId": 0,
+      "type": "()",
+      "components": [],
+      "typeParameters": null
+    },
+    {
+      "typeId": 1,
+      "type": "b256",
+      "components": null,
+      "typeParameters": null
+    },
+    {
+      "typeId": 2,
+      "type": "struct Address",
+      "components": [
+        {
+          "name": "value",
+          "type": 1,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 3,
+      "type": "struct Collection",
+      "components": [
+        {
+          "name": "contract_id",
+          "type": 4,
+          "typeArguments": null
+        },
+        {
+          "name": "collection_id",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "creator",
+          "type": 2,
+          "typeArguments": null
+        },
+        {
+          "name": "floor_price",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "num_listed_nfts",
+          "type": 6,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 4,
+      "type": "struct ContractId",
+      "components": [
+        {
+          "name": "value",
+          "type": 1,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 5,
+      "type": "struct Item",
+      "components": [
+        {
+          "name": "contract_id",
+          "type": 4,
+          "typeArguments": null
+        },
+        {
+          "name": "token_id",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "owner",
+          "type": 2,
+          "typeArguments": null
+        },
+        {
+          "name": "price",
+          "type": 6,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 6,
+      "type": "u64",
+      "components": null,
+      "typeParameters": null
+    }
+  ],
+  "functions": [
+    {
+      "inputs": [
+        {
+          "name": "contract_Id",
+          "type": 4,
+          "typeArguments": null
+        }
+      ],
+      "name": "register_collection",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      }
+    },
+    {
+      "inputs": [
+        {
+          "name": "contract_Id",
+          "type": 4,
+          "typeArguments": null
+        }
+      ],
+      "name": "get_collection",
+      "output": {
+        "name": "",
+        "type": 3,
+        "typeArguments": null
+      }
+    },
+    {
+      "inputs": [
+        {
+          "name": "collection_id",
+          "type": 6,
+          "typeArguments": null
+        }
+      ],
+      "name": "get_collection_by_id",
+      "output": {
+        "name": "",
+        "type": 3,
+        "typeArguments": null
+      }
+    },
+    {
+      "inputs": [],
+      "name": "total_registered_collections",
+      "output": {
+        "name": "",
+        "type": 6,
+        "typeArguments": null
+      }
+    },
+    {
+      "inputs": [
+        {
+          "name": "contract_Id",
+          "type": 4,
+          "typeArguments": null
+        },
+        {
+          "name": "token_id",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "price",
+          "type": 6,
+          "typeArguments": null
+        }
+      ],
+      "name": "list_nft",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      }
+    },
+    {
+      "inputs": [
+        {
+          "name": "contract_Id",
+          "type": 4,
+          "typeArguments": null
+        },
+        {
+          "name": "item_id",
+          "type": 6,
+          "typeArguments": null
+        }
+      ],
+      "name": "get_listed_nft",
+      "output": {
+        "name": "",
+        "type": 5,
+        "typeArguments": null
+      }
+    },
+    {
+      "inputs": [
+        {
+          "name": "contract_Id",
+          "type": 4,
+          "typeArguments": null
+        },
+        {
+          "name": "item_id",
+          "type": 6,
+          "typeArguments": null
+        }
+      ],
+      "name": "purchase_nft",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      }
+    }
+  ],
+  "loggedTypes": []
+}
